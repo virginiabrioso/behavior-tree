@@ -223,8 +223,8 @@ int main() {
 	Selector *selector1 = new Selector, *selector2 = new Selector, *selector3 = new Selector, *selector4 = new Selector, *selector5 = new Selector;  
 	Inverter *inverter1 = new Inverter, *inverter2 = new Inverter, *inverter3 = new Inverter, *inverter4 = new Inverter;
 
-	// The robot is initially attacker, enemy have the ball and robot is not behind enemy
-    PositionStatus* positionStatus = new PositionStatus {false, false, true, false, false, false, true, 9};  
+	// The robot is initially attacker, enemy have the ball and robot is behind enemy
+    PositionStatus* positionStatus = new PositionStatus {true, false, true, false, false, true, false, 9};  
 
 	//checks
     CheckIfRobotIsAttacker* checkAttacker = new CheckIfRobotIsAttacker (positionStatus);
